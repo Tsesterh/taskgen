@@ -1,0 +1,77 @@
+Instruction: Context: Today is Christmas Eve of 1937. What is the date one week from today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date one week from December 24, 1937, and format it in MM/DD/YYYY.
+Output: 12/31/1937
+
+Python Code: import datetime
+
+# Define the initial date
+initial_date = datetime.datetime(1937, 12, 24)
+
+# Calculate the date one week later
+one_week_later = initial_date + datetime.timedelta(weeks=1)
+
+# Format the date in MM/DD/YYYY
+formatted_date = one_week_later.strftime("%m/%d/%Y")
+
+# Print the formatted date
+print(formatted_date)
+
+
+Instruction: Context: Jane quited her job on Mar 20, 2020. 176 days have passed since then. What is the date a month ago in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the current date by adding 176 days to Mar 20, 2020.
+Output: 08/13/2020
+
+Python Code: import datetime
+
+# Define the initial date
+initial_date = datetime.datetime(2020, 3, 20)
+
+# Add 176 days to the initial date
+current_date = initial_date + datetime.timedelta(days=176)
+
+# Calculate the date a month ago from the current date
+one_month_ago = current_date - datetime.timedelta(days=30)
+
+# Print the date a month ago in MM/DD/YYYY format
+print(one_month_ago.strftime("%m/%d/%Y"))
+
+
+Instruction: Context: Jane quited her job on Mar 20, 2020. 176 days have passed since then. What is the date a month ago in MM/DD/YYYY?
+Previous Subtasks: {'python_generate_and_run_code_tool(instruction="Calculate the current date by adding 176 days to Mar 20, 2020.")': {'output_1': '08/13/2020\n', 'output_2': 'import datetime\n\n# Define the initial date\ninitial_date = datetime.datetime(2020, 3, 20)\n\n# Add 176 days to the initial date\ncurrent_date = initial_date + datetime.timedelta(days=176)\n\n# Calculate the date a month ago from the current date\none_month_ago = current_date - datetime.timedelta(days=30)\n\n# Print the date a month ago in MM/DD/YYYY format\nprint(one_month_ago.strftime("%m/%d/%Y"))'}}
+Instruction: Calculate the date a month ago from 08/13/2020 and print it in MM/DD/YYYY format.
+Output: 07/14/2020
+
+Python Code: import datetime
+
+# Define the current date
+current_date = datetime.datetime(2020, 8, 13)
+
+# Calculate the date a month ago from the current date
+one_month_ago = current_date - datetime.timedelta(days=30)
+
+# Print the date a month ago in MM/DD/YYYY format
+print(one_month_ago.strftime("%m/%d/%Y"))
+
+
+Instruction: Context: It was Sept. 1st, 2021 a week ago. What is the date one year ago from today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Generate and run code to get today's date, subtract one year, and format the result in MM/DD/YYYY.
+Output: 09/10/2023
+
+Python Code: import datetime
+
+# Get today's date
+today = datetime.datetime.now()
+
+# Subtract one year
+one_year_ago = today - datetime.timedelta(days=365)
+
+# Format the date in MM/DD/YYYY
+formatted_date = one_year_ago.strftime("%m/%d/%Y")
+
+# Print the formatted date
+print(formatted_date)
+
+

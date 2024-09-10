@@ -1,0 +1,37 @@
+Instruction: Context: Today is Christmas Eve of 1937. What is the date one week from today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date one week from December 24, 1937.
+Output: 12/31/1937
+
+Python Code: import datetime
+
+# Define the initial date
+initial_date = datetime.datetime(1937, 12, 24)
+
+# Calculate the date one week later
+one_week_later = initial_date + datetime.timedelta(weeks=1)
+
+# Print the date in MM/DD/YYYY format
+print(one_week_later.strftime("%m/%d/%Y"))
+
+
+Instruction: Context: Jane quited her job on Mar 20, 2020. 176 days have passed since then. What is the date a month ago in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date 176 days after Mar 20, 2020.
+Output: 2020/09/12
+
+Python Code: import datetime
+
+# Given date
+start_date = datetime.datetime(2020, 3, 20)
+
+# Number of days to add
+days_to_add = 176
+
+# Calculate the new date
+new_date = start_date + datetime.timedelta(days=days_to_add)
+
+# Print the new date in the required format
+print(new_date.strftime("%Y/%m/%d"))
+
+

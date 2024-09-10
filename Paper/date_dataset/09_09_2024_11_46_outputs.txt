@@ -1,0 +1,1061 @@
+New Experiment:
+Instruction: Context: Today is Christmas Eve of 1937. What is the date one week from today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date one week from December 24, 1937, and format it in MM/DD/YYYY.
+Output: 12/31/1937
+
+Python Code: import datetime
+
+# Define the initial date
+initial_date = datetime.datetime(1937, 12, 24)
+
+# Calculate the date one week later
+one_week_later = initial_date + datetime.timedelta(weeks=1)
+
+# Format the date in MM/DD/YYYY
+formatted_date = one_week_later.strftime("%m/%d/%Y")
+
+# Print the formatted date
+print(formatted_date)
+
+
+New Experiment:
+Instruction: Context: Jane quited her job on Mar 20, 2020. 176 days have passed since then. What is the date a month ago in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the current date by adding 176 days to Mar 20, 2020.
+Output: 08/13/2020
+
+Python Code: import datetime
+
+# Define the initial date when Jane quit her job
+initial_date = datetime.datetime(2020, 3, 20)
+
+# Calculate the date 176 days after the initial date
+current_date = initial_date + datetime.timedelta(days=176)
+
+# Calculate the date a month ago from the current date
+one_month_ago = current_date - datetime.timedelta(days=30)
+
+# Print the date a month ago in MM/DD/YYYY format
+print(one_month_ago.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Jane quited her job on Mar 20, 2020. 176 days have passed since then. What is the date a month ago in MM/DD/YYYY?
+Previous Subtasks: {'python_generate_and_run_code_tool(instruction="Calculate the current date by adding 176 days to Mar 20, 2020.")': {'output_1': '08/13/2020\n', 'output_2': 'import datetime\n\n# Define the initial date when Jane quit her job\ninitial_date = datetime.datetime(2020, 3, 20)\n\n# Calculate the date 176 days after the initial date\ncurrent_date = initial_date + datetime.timedelta(days=176)\n\n# Calculate the date a month ago from the current date\none_month_ago = current_date - datetime.timedelta(days=30)\n\n# Print the date a month ago in MM/DD/YYYY format\nprint(one_month_ago.strftime("%m/%d/%Y"))'}}
+Instruction: Calculate the date a month ago from 08/13/2020 and print it in MM/DD/YYYY format.
+Output: 07/14/2020
+
+Python Code: import datetime
+
+# Define the current date
+current_date = datetime.datetime(2020, 8, 13)
+
+# Calculate the date a month ago from the current date
+one_month_ago = current_date - datetime.timedelta(days=30)
+
+# Print the date a month ago in MM/DD/YYYY format
+print(one_month_ago.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: It was Sept. 1st, 2021 a week ago. What is the date one year ago from today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Generate and run code to get today's date, subtract one year, and format the result in MM/DD/YYYY.
+Output: 09/10/2023
+
+Python Code: import datetime
+
+# Get today's date
+today = datetime.datetime.now()
+
+# Subtract one year
+one_year_ago = today - datetime.timedelta(days=365)
+
+# Format the date in MM/DD/YYYY
+formatted_date = one_year_ago.strftime("%m/%d/%Y")
+
+# Print the formatted date
+print(formatted_date)
+
+
+New Experiment:
+Instruction: Context: Today is the palindrome day of 2020, because the MMDDYYYY format of the date is the same backwards as forwards. What is the date one year ago from today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date one year ago from 02/02/2020 and format it in MM/DD/YYYY.
+Output: 02/02/2019
+
+Python Code: import datetime
+
+today = datetime.datetime.strptime("02/02/2020", "%m/%d/%Y")
+one_year_ago = today - datetime.timedelta(days=365)
+print(one_year_ago.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: It is 4/19/1969 today. What is the date a month ago in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Generate and run code to subtract one month from 4/19/1969 and print the result in MM/DD/YYYY format.
+Output: 03/19/1969
+
+Python Code: import datetime
+from dateutil.relativedelta import relativedelta
+
+# Define the initial date
+initial_date = datetime.datetime(1969, 4, 19)
+
+# Subtract one month
+new_date = initial_date - relativedelta(months=1)
+
+# Print the result in MM/DD/YYYY format
+print(new_date.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Today is the first day of 2007. What is the date a month ago in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Generate and run code to subtract one month from January 1, 2007, and format the result in MM/DD/YYYY.
+Output: 12/01/2006
+
+Python Code: from datetime import datetime
+from dateutil.relativedelta import relativedelta
+
+date = datetime(2007, 1, 1)
+new_date = date - relativedelta(months=1)
+print(new_date.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: The day before yesterday was 11/23/1933. What is the date yesterday in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date one day after 11/23/1933.
+Output: 11/24/1933
+
+Python Code: import datetime
+
+date_str = "11/23/1933"
+date_format = "%m/%d/%Y"
+date_obj = datetime.datetime.strptime(date_str, date_format)
+date_yesterday = date_obj + datetime.timedelta(days=1)
+print(date_yesterday.strftime(date_format))
+
+
+New Experiment:
+Instruction: Context: The day before yesterday was 11/23/1933. What is the date yesterday in MM/DD/YYYY?
+Previous Subtasks: {'python_generate_and_run_code_tool(instruction="Calculate the date one day after 11/23/1933.")': {'output_1': '11/24/1933\n', 'output_2': 'import datetime\n\ndate_str = "11/23/1933"\ndate_format = "%m/%d/%Y"\ndate_obj = datetime.datetime.strptime(date_str, date_format)\ndate_yesterday = date_obj + datetime.timedelta(days=1)\nprint(date_yesterday.strftime(date_format))'}}
+Instruction: Calculate the date one day after 11/24/1933.
+Output: 11/25/1933
+
+Python Code: import datetime
+
+date_str = "11/24/1933"
+date_format = "%m/%d/%Y"
+date_obj = datetime.datetime.strptime(date_str, date_format)
+date_yesterday = date_obj + datetime.timedelta(days=1)
+print(date_yesterday.strftime(date_format))
+
+
+New Experiment:
+Instruction: Context: Yesterday, Jan 21, 2011, Jane ate 2 pizzas and 5 wings. What is the date one year ago from today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Generate and run code to find the date one year ago from today in the format MM/DD/YYYY.
+Output: 09/10/2023
+
+Python Code: import datetime
+
+# Get today's date
+today = datetime.datetime.now()
+
+# Calculate the date one year ago
+one_year_ago = today - datetime.timedelta(days=365)
+
+# Print the date in MM/DD/YYYY format
+print(one_year_ago.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Today is the last day of the first quarter of 2008. What is the date 24 hours later in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date 24 hours after March 31, 2008, and format it in MM/DD/YYYY.
+Output: 04/01/2008
+
+Python Code: import datetime
+
+# Define the initial date
+initial_date = datetime.datetime(2008, 3, 31)
+
+# Calculate the date 24 hours later
+new_date = initial_date + datetime.timedelta(days=1)
+
+# Print the new date in MM/DD/YYYY format
+print(new_date.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: In the UK, people usually put the day before the month when formatting the date. Therefore, today is 02/01/1987 to them. What is the date tomorrow in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Generate and run code to increment the date 02/01/1987 by one day and convert it to MM/DD/YYYY format.
+Output: 01/03/1987
+
+Python Code: import datetime
+
+date_str = "02/01/1987"
+date_obj = datetime.datetime.strptime(date_str, "%d/%m/%Y")
+tomorrow = date_obj + datetime.timedelta(days=1)
+print(tomorrow.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Jane is celebrating the last day of Jan 2012. What is the date 10 days ago in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date 10 days before January 31, 2012, and format it as MM/DD/YYYY.
+Output: 01/21/2012
+
+Python Code: import datetime
+
+# Define the date Jane is celebrating
+celebration_date = datetime.datetime(2012, 1, 31)
+
+# Calculate the date 10 days ago
+previous_date = celebration_date - datetime.timedelta(days=10)
+
+# Print the date in MM/DD/YYYY format
+print(previous_date.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Today is the second day of the third month of 1966. What is the date one week ago from today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date one week before March 2, 1966.
+Output: 02/23/1966
+
+Python Code: import datetime
+
+# Define the date
+current_date = datetime.datetime(1966, 3, 2)
+
+# Calculate the date one week ago
+one_week_ago = current_date - datetime.timedelta(weeks=1)
+
+# Print the date in MM/DD/YYYY format
+print(one_week_ago.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Yesterday, Jan 21, 2011, Jane ate 2 pizzas and 5 wings. What is the date one week ago from today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date one week ago from today and format it as MM/DD/YYYY.
+Output: 09/02/2024
+
+Python Code: import datetime
+
+today = datetime.date.today()
+one_week_ago = today - datetime.timedelta(days=7)
+print(one_week_ago.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Today is Apr 10, 1985. Jane's appointment will be 3 days later. What is the date one week from today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date one week from April 10, 1985, and format it as MM/DD/YYYY.
+Output: 04/17/1985
+
+Python Code: import datetime
+
+today = datetime.datetime(1985, 4, 10)
+one_week_later = today + datetime.timedelta(weeks=1)
+print(one_week_later.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Today is Apr 10, 1985. Jane's appointment will be 3 days later. What is the date one week from today in MM/DD/YYYY?
+Previous Subtasks: {'python_generate_and_run_code_tool(instruction="Calculate the date one week from April 10, 1985, and format it as MM/DD/YYYY.")': {'output_1': '04/17/1985\n', 'output_2': 'import datetime\n\ntoday = datetime.datetime(1985, 4, 10)\none_week_later = today + datetime.timedelta(weeks=1)\nprint(one_week_later.strftime("%m/%d/%Y"))'}}
+Instruction: Calculate the date 3 days after April 10, 1985, and format it as MM/DD/YYYY.
+Output: 04/13/1985
+
+Python Code: import datetime
+
+today = datetime.datetime(1985, 4, 10)
+three_days_later = today + datetime.timedelta(days=3)
+print(three_days_later.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: The first day of 2019 is a Tuesday, and today is the first Monday of 2019. What is the date a month ago in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Determine the date of the first Monday of 2019.
+Output: 12/02/2018
+
+Python Code: import datetime
+
+# The first day of 2019 is a Tuesday
+first_day_of_2019 = datetime.datetime(2019, 1, 1)
+
+# Calculate the first Monday of 2019
+first_monday_of_2019 = first_day_of_2019 + datetime.timedelta(days=(7 - first_day_of_2019.weekday() + 1) % 7)
+
+# Calculate the date a month ago from the first Monday of 2019
+one_month_ago = first_monday_of_2019 - datetime.timedelta(days=30)
+
+# Print the date in MM/DD/YYYY format
+print(one_month_ago.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: The first day of 2019 is a Tuesday, and today is the first Monday of 2019. What is the date a month ago in MM/DD/YYYY?
+Previous Subtasks: {'python_generate_and_run_code_tool(instruction="Determine the date of the first Monday of 2019.")': {'output_1': '12/02/2018\n', 'output_2': 'import datetime\n\n# The first day of 2019 is a Tuesday\nfirst_day_of_2019 = datetime.datetime(2019, 1, 1)\n\n# Calculate the first Monday of 2019\nfirst_monday_of_2019 = first_day_of_2019 + datetime.timedelta(days=(7 - first_day_of_2019.weekday() + 1) % 7)\n\n# Calculate the date a month ago from the first Monday of 2019\none_month_ago = first_monday_of_2019 - datetime.timedelta(days=30)\n\n# Print the date in MM/DD/YYYY format\nprint(one_month_ago.strftime("%m/%d/%Y"))'}}
+Instruction: Calculate the date a month ago from 12/02/2018 and present it in MM/DD/YYYY format.
+Output: 11/02/2018
+
+Python Code: import datetime
+
+# Given date
+given_date = datetime.datetime(2018, 12, 2)
+
+# Calculate the date a month ago
+one_month_ago = given_date - datetime.timedelta(days=30)
+
+# Print the date in MM/DD/YYYY format
+print(one_month_ago.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: The first day of 2019 is a Tuesday, and today is the first Monday of 2019. What is the date a month ago in MM/DD/YYYY?
+Previous Subtasks: {'python_generate_and_run_code_tool(instruction="Determine the date of the first Monday of 2019.")': {'output_1': '12/02/2018\n', 'output_2': 'import datetime\n\n# The first day of 2019 is a Tuesday\nfirst_day_of_2019 = datetime.datetime(2019, 1, 1)\n\n# Calculate the first Monday of 2019\nfirst_monday_of_2019 = first_day_of_2019 + datetime.timedelta(days=(7 - first_day_of_2019.weekday() + 1) % 7)\n\n# Calculate the date a month ago from the first Monday of 2019\none_month_ago = first_monday_of_2019 - datetime.timedelta(days=30)\n\n# Print the date in MM/DD/YYYY format\nprint(one_month_ago.strftime("%m/%d/%Y"))'}, 'python_generate_and_run_code_tool(instruction="Calculate the date a month ago from 12/02/2018 and present it in MM/DD/YYYY format.")': {'output_1': '11/02/2018\n', 'output_2': 'import datetime\n\n# Given date\ngiven_date = datetime.datetime(2018, 12, 2)\n\n# Calculate the date a month ago\none_month_ago = given_date - datetime.timedelta(days=30)\n\n# Print the date in MM/DD/YYYY format\nprint(one_month_ago.strftime("%m/%d/%Y"))'}}
+Instruction: Determine the correct date of the first Monday of 2019.
+Output: 12/08/2018
+
+Python Code: import datetime
+
+# The first day of 2019 is a Tuesday
+first_day_of_2019 = datetime.datetime(2019, 1, 1)
+
+# Calculate the first Monday of 2019
+first_monday_of_2019 = first_day_of_2019 + datetime.timedelta(days=(7 - first_day_of_2019.weekday() + 7) % 7)
+
+# Calculate the date a month ago from the first Monday of 2019
+one_month_ago = first_monday_of_2019 - datetime.timedelta(days=30)
+
+# Print the date in MM/DD/YYYY format
+print(one_month_ago.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: The first day of 2019 is a Tuesday, and today is the first Monday of 2019. What is the date a month ago in MM/DD/YYYY?
+Previous Subtasks: {'python_generate_and_run_code_tool(instruction="Determine the date of the first Monday of 2019.")': {'output_1': '12/02/2018\n', 'output_2': 'import datetime\n\n# The first day of 2019 is a Tuesday\nfirst_day_of_2019 = datetime.datetime(2019, 1, 1)\n\n# Calculate the first Monday of 2019\nfirst_monday_of_2019 = first_day_of_2019 + datetime.timedelta(days=(7 - first_day_of_2019.weekday() + 1) % 7)\n\n# Calculate the date a month ago from the first Monday of 2019\none_month_ago = first_monday_of_2019 - datetime.timedelta(days=30)\n\n# Print the date in MM/DD/YYYY format\nprint(one_month_ago.strftime("%m/%d/%Y"))'}, 'python_generate_and_run_code_tool(instruction="Calculate the date a month ago from 12/02/2018 and present it in MM/DD/YYYY format.")': {'output_1': '11/02/2018\n', 'output_2': 'import datetime\n\n# Given date\ngiven_date = datetime.datetime(2018, 12, 2)\n\n# Calculate the date a month ago\none_month_ago = given_date - datetime.timedelta(days=30)\n\n# Print the date in MM/DD/YYYY format\nprint(one_month_ago.strftime("%m/%d/%Y"))'}, 'python_generate_and_run_code_tool(instruction="Determine the correct date of the first Monday of 2019.")': {'output_1': '12/08/2018\n', 'output_2': 'import datetime\n\n# The first day of 2019 is a Tuesday\nfirst_day_of_2019 = datetime.datetime(2019, 1, 1)\n\n# Calculate the first Monday of 2019\nfirst_monday_of_2019 = first_day_of_2019 + datetime.timedelta(days=(7 - first_day_of_2019.weekday() + 7) % 7)\n\n# Calculate the date a month ago from the first Monday of 2019\none_month_ago = first_monday_of_2019 - datetime.timedelta(days=30)\n\n# Print the date in MM/DD/YYYY format\nprint(one_month_ago.strftime("%m/%d/%Y"))'}}
+Instruction: Determine the correct date of the first Monday of 2019 and then calculate the date a month ago from that date, presenting it in MM/DD/YYYY format.
+Output: 12/07/2018
+
+Python Code: import datetime
+
+# The first day of 2019 is a Tuesday
+first_day_of_2019 = datetime.datetime(2019, 1, 1)
+
+# Calculate the first Monday of 2019
+first_monday_of_2019 = first_day_of_2019 + datetime.timedelta(days=(7 - first_day_of_2019.weekday() + 6) % 7)
+
+# Calculate the date a month ago from the first Monday of 2019
+one_month_ago = first_monday_of_2019 - datetime.timedelta(days=30)
+
+# Print the date in MM/DD/YYYY format
+print(one_month_ago.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: The first day of 2019 is a Tuesday, and today is the first Monday of 2019. What is the date a month ago in MM/DD/YYYY?
+Previous Subtasks: {'python_generate_and_run_code_tool(instruction="Determine the date of the first Monday of 2019.")': {'output_1': '12/02/2018\n', 'output_2': 'import datetime\n\n# The first day of 2019 is a Tuesday\nfirst_day_of_2019 = datetime.datetime(2019, 1, 1)\n\n# Calculate the first Monday of 2019\nfirst_monday_of_2019 = first_day_of_2019 + datetime.timedelta(days=(7 - first_day_of_2019.weekday() + 1) % 7)\n\n# Calculate the date a month ago from the first Monday of 2019\none_month_ago = first_monday_of_2019 - datetime.timedelta(days=30)\n\n# Print the date in MM/DD/YYYY format\nprint(one_month_ago.strftime("%m/%d/%Y"))'}, 'python_generate_and_run_code_tool(instruction="Calculate the date a month ago from 12/02/2018 and present it in MM/DD/YYYY format.")': {'output_1': '11/02/2018\n', 'output_2': 'import datetime\n\n# Given date\ngiven_date = datetime.datetime(2018, 12, 2)\n\n# Calculate the date a month ago\none_month_ago = given_date - datetime.timedelta(days=30)\n\n# Print the date in MM/DD/YYYY format\nprint(one_month_ago.strftime("%m/%d/%Y"))'}, 'python_generate_and_run_code_tool(instruction="Determine the correct date of the first Monday of 2019.")': {'output_1': '12/08/2018\n', 'output_2': 'import datetime\n\n# The first day of 2019 is a Tuesday\nfirst_day_of_2019 = datetime.datetime(2019, 1, 1)\n\n# Calculate the first Monday of 2019\nfirst_monday_of_2019 = first_day_of_2019 + datetime.timedelta(days=(7 - first_day_of_2019.weekday() + 7) % 7)\n\n# Calculate the date a month ago from the first Monday of 2019\none_month_ago = first_monday_of_2019 - datetime.timedelta(days=30)\n\n# Print the date in MM/DD/YYYY format\nprint(one_month_ago.strftime("%m/%d/%Y"))'}, 'python_generate_and_run_code_tool(instruction="Determine the correct date of the first Monday of 2019 and then calculate the date a month ago from that date, presenting it in MM/DD/YYYY format.")': {'output_1': '12/07/2018\n', 'output_2': 'import datetime\n\n# The first day of 2019 is a Tuesday\nfirst_day_of_2019 = datetime.datetime(2019, 1, 1)\n\n# Calculate the first Monday of 2019\nfirst_monday_of_2019 = first_day_of_2019 + datetime.timedelta(days=(7 - first_day_of_2019.weekday() + 6) % 7)\n\n# Calculate the date a month ago from the first Monday of 2019\none_month_ago = first_monday_of_2019 - datetime.timedelta(days=30)\n\n# Print the date in MM/DD/YYYY format\nprint(one_month_ago.strftime("%m/%d/%Y"))'}}
+Instruction: Determine the correct date of the first Monday of 2019 and then calculate the date a month ago from that date, presenting it in MM/DD/YYYY format.
+Output: 12/07/2018
+
+Python Code: import datetime
+
+# The first day of 2019 is a Tuesday
+first_day_of_2019 = datetime.datetime(2019, 1, 1)
+
+# Calculate the first Monday of 2019
+first_monday_of_2019 = first_day_of_2019 + datetime.timedelta(days=(7 - first_day_of_2019.weekday() + 6) % 7)
+
+# Calculate the date a month ago from the first Monday of 2019
+one_month_ago = first_monday_of_2019 - datetime.timedelta(days=30)
+
+# Print the date in MM/DD/YYYY format
+print(one_month_ago.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Jane was born on the last day of Feburary in 2000. Today is her 16-year-old birthday. What is the date 24 hours later in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Determine the last day of February in the year 2000.
+Output: 03/01/2016
+
+Python Code: import datetime
+
+# Jane's birthdate
+birthdate = datetime.datetime(2000, 2, 29)
+
+# Jane's 16th birthday
+sixteenth_birthday = birthdate.replace(year=birthdate.year + 16)
+
+# Date 24 hours after her 16th birthday
+next_day = sixteenth_birthday + datetime.timedelta(days=1)
+
+# Print the date in MM/DD/YYYY format
+print(next_day.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: 2015 is coming in 36 hours. What is the date 10 days ago in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the exact date and time 36 hours before January 1, 2015.
+Output: 2014/12/30
+
+Python Code: import datetime
+
+# Create a datetime object for January 1, 2015
+new_year = datetime.datetime(2015, 1, 1)
+
+# Subtract 36 hours
+time_difference = datetime.timedelta(hours=36)
+result_date = new_year - time_difference
+
+# Print the result in the required format
+print(result_date.strftime("%Y/%m/%d"))
+
+
+New Experiment:
+Instruction: Context: 2015 is coming in 36 hours. What is the date 10 days ago in MM/DD/YYYY?
+Previous Subtasks: {'python_generate_and_run_code_tool(instruction="Calculate the exact date and time 36 hours before January 1, 2015.")': {'output_1': '2014/12/30\n', 'output_2': 'import datetime\n\n# Create a datetime object for January 1, 2015\nnew_year = datetime.datetime(2015, 1, 1)\n\n# Subtract 36 hours\ntime_difference = datetime.timedelta(hours=36)\nresult_date = new_year - time_difference\n\n# Print the result in the required format\nprint(result_date.strftime("%Y/%m/%d"))'}}
+Instruction: Calculate the date 10 days before December 30, 2014, and format it in MM/DD/YYYY.
+Output: 12/20/2014
+
+Python Code: import datetime
+
+# Create a datetime object for December 30, 2014
+reference_date = datetime.datetime(2014, 12, 30)
+
+# Subtract 10 days
+time_difference = datetime.timedelta(days=10)
+result_date = reference_date - time_difference
+
+# Print the result in the required format
+print(result_date.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Jane quited her job on Mar 20, 2020. 176 days have passed since then. What is the date today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date that is 176 days after Mar 20, 2020.
+Output: 09/12/2020
+
+Python Code: from datetime import datetime, timedelta
+
+# Initial date
+start_date = datetime(2020, 3, 20)
+
+# Number of days to add
+days_to_add = 176
+
+# Calculate the new date
+new_date = start_date + timedelta(days=days_to_add)
+
+# Print the new date in MM/DD/YYYY format
+print(new_date.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Today is the first day of 2007. What is the date one year ago from today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date one year ago from January 1, 2007, and format it in MM/DD/YYYY.
+Output: 01/01/2006
+
+Python Code: import datetime
+
+# Define the current date
+current_date = datetime.datetime(2007, 1, 1)
+
+# Calculate the date one year ago
+one_year_ago = current_date - datetime.timedelta(days=365)
+
+# Print the date in MM/DD/YYYY format
+print(one_year_ago.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Jane and John married on Jan 2, 1958. Today is their golden wedding anniversary. What is the date tomorrow in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date one day after Jan 2, 2008 and format it in MM/DD/YYYY.
+Output: 01/03/2008
+
+Python Code: from datetime import datetime, timedelta
+
+date_str = '2008-01-02'
+date_obj = datetime.strptime(date_str, '%Y-%m-%d')
+next_day = date_obj + timedelta(days=1)
+print(next_day.strftime('%m/%d/%Y'))
+
+
+New Experiment:
+Instruction: Context: Yesterday was April 30, 2021. What is the date one year ago from today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Identify today's date based on the information that yesterday was April 30, 2021.
+Output: 2020/05/01
+
+Python Code: import datetime
+
+yesterday = datetime.date(2021, 4, 30)
+today = yesterday + datetime.timedelta(days=1)
+one_year_ago = today - datetime.timedelta(days=365)
+print(one_year_ago.strftime("%Y/%m/%d"))
+
+
+New Experiment:
+Instruction: Context: Yesterday was April 30, 2021. What is the date one year ago from today in MM/DD/YYYY?
+Previous Subtasks: {'python_generate_and_run_code_tool(instruction="Identify today\'s date based on the information that yesterday was April 30, 2021.")': {'output_1': '2020/05/01\n', 'output_2': 'import datetime\n\nyesterday = datetime.date(2021, 4, 30)\ntoday = yesterday + datetime.timedelta(days=1)\none_year_ago = today - datetime.timedelta(days=365)\nprint(one_year_ago.strftime("%Y/%m/%d"))'}}
+Instruction: Format the date one year ago from today (May 1, 2020) into MM/DD/YYYY.
+Output: 05/01/2020
+
+Python Code: import datetime
+
+yesterday = datetime.date(2021, 4, 30)
+today = yesterday + datetime.timedelta(days=1)
+one_year_ago = today - datetime.timedelta(days=365)
+print(one_year_ago.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: The concert was scheduled to be on 06/01/1943, but was delayed by one day to today. What is the date one year ago from today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date one year ago from 06/02/1943 and format it in MM/DD/YYYY.
+Output: 06/02/1942
+
+Python Code: import datetime
+
+# Original date
+original_date = datetime.datetime(1943, 6, 2)
+
+# Calculate the date one year ago
+one_year_ago = original_date - datetime.timedelta(days=365)
+
+# Format the date in MM/DD/YYYY
+formatted_date = one_year_ago.strftime("%m/%d/%Y")
+
+# Print the formatted date
+print(formatted_date)
+
+
+New Experiment:
+Instruction: Context: The deadline is Jun 1, 2021, which is 2 days away from now. What is the date 10 days ago in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date 10 days before May 30, 2021, and format it in MM/DD/YYYY.
+Output: 05/20/2021
+
+Python Code: import datetime
+
+# Define the date 10 days before May 30, 2021
+base_date = datetime.datetime(2021, 5, 30)
+days_to_subtract = datetime.timedelta(days=10)
+new_date = base_date - days_to_subtract
+
+# Print the new date in MM/DD/YYYY format
+print(new_date.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: 2015 is coming in 36 hours. What is the date a month ago in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date and time 36 hours before January 1, 2015.
+Output: 12/30/2014
+
+Python Code: import datetime
+
+# Define the initial date and time
+initial_date = datetime.datetime(2015, 1, 1, 0, 0)
+
+# Subtract 36 hours
+time_difference = datetime.timedelta(hours=36)
+new_date = initial_date - time_difference
+
+# Print the new date in MM/DD/YYYY format
+print(new_date.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: 2015 is coming in 36 hours. What is the date a month ago in MM/DD/YYYY?
+Previous Subtasks: {'python_generate_and_run_code_tool(instruction="Calculate the date and time 36 hours before January 1, 2015.")': {'output_1': '12/30/2014\n', 'output_2': 'import datetime\n\n# Define the initial date and time\ninitial_date = datetime.datetime(2015, 1, 1, 0, 0)\n\n# Subtract 36 hours\ntime_difference = datetime.timedelta(hours=36)\nnew_date = initial_date - time_difference\n\n# Print the new date in MM/DD/YYYY format\nprint(new_date.strftime("%m/%d/%Y"))'}}
+Instruction: Calculate the date one month before December 30, 2014, and format it as MM/DD/YYYY.
+Output: 11/30/2014
+
+Python Code: import datetime
+from dateutil.relativedelta import relativedelta
+
+# Define the initial date
+initial_date = datetime.datetime(2014, 12, 30)
+
+# Subtract one month
+new_date = initial_date - relativedelta(months=1)
+
+# Print the new date in MM/DD/YYYY format
+print(new_date.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: The current local time is 3:02 pm of 5/4/2004. What is the date yesterday in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Generate and run code to subtract one day from 5/4/2004 and print the result in MM/DD/YYYY format.
+Output: 05/03/2004
+
+Python Code: import datetime
+
+given_date = datetime.datetime(2004, 5, 4)
+yesterday = given_date - datetime.timedelta(days=1)
+print(yesterday.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Today's meeting is rescheduled to 11 am tomorrow, 10/16/1924. What is the date today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date one day before 10/16/1924.
+Output: 10/15/1924
+
+Python Code: import datetime
+
+given_date = datetime.datetime.strptime("10/16/1924", "%m/%d/%Y")
+previous_date = given_date - datetime.timedelta(days=1)
+print(previous_date.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Today is Christmas Eve of 1937. What is the date 10 days ago in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date 10 days before December 24, 1937.
+Output: 12/14/1937
+
+Python Code: import datetime
+
+date = datetime.datetime(1937, 12, 24)
+ten_days_ago = date - datetime.timedelta(days=10)
+print(ten_days_ago.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Jane thinks today is 6/18/2019, but John thinks today is 6/19/2019. Jane is correct. What is the date one week ago from today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date one week ago from 6/18/2019.
+Output: 2019/06/11
+
+Python Code: import datetime
+
+date_today = datetime.datetime(2019, 6, 18)
+date_one_week_ago = date_today - datetime.timedelta(days=7)
+print(date_one_week_ago.strftime("%Y/%m/%d"))
+
+
+New Experiment:
+Instruction: Context: Jane thinks today is 6/18/2019, but John thinks today is 6/19/2019. Jane is correct. What is the date one week ago from today in MM/DD/YYYY?
+Previous Subtasks: {'python_generate_and_run_code_tool(instruction="Calculate the date one week ago from 6/18/2019.")': {'output_1': '2019/06/11\n', 'output_2': 'import datetime\n\ndate_today = datetime.datetime(2019, 6, 18)\ndate_one_week_ago = date_today - datetime.timedelta(days=7)\nprint(date_one_week_ago.strftime("%Y/%m/%d"))'}}
+Instruction: Reformat the date 2019/06/11 to MM/DD/YYYY format.
+Output: 06/11/2019
+
+Python Code: import datetime
+
+date_today = datetime.datetime(2019, 6, 18)
+date_one_week_ago = date_today - datetime.timedelta(days=7)
+print(date_one_week_ago.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: The current local time is 3:02 pm of 5/4/2004. What is the date one week ago from today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Generate and run code to subtract 7 days from 5/4/2004 and print the result in MM/DD/YYYY format.
+Output: 04/27/2004
+
+Python Code: import datetime
+
+# Define the initial date
+initial_date = datetime.datetime(2004, 5, 4)
+
+# Subtract 7 days
+one_week_ago = initial_date - datetime.timedelta(days=7)
+
+# Print the result in MM/DD/YYYY format
+print(one_week_ago.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: 2015 is coming in 36 hours. What is the date one year ago from today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date one year ago from December 30, 2014, and format it as MM/DD/YYYY.
+Output: 12/30/2013
+
+Python Code: import datetime
+
+# Define the date
+current_date = datetime.datetime(2014, 12, 30)
+
+# Calculate the date one year ago
+one_year_ago = current_date - datetime.timedelta(days=365)
+
+# Format the date as MM/DD/YYYY
+formatted_date = one_year_ago.strftime("%m/%d/%Y")
+
+# Print the formatted date
+print(formatted_date)
+
+
+New Experiment:
+Instruction: Context: 2015 is coming in 36 hours. What is the date one year ago from today in MM/DD/YYYY?
+Previous Subtasks: {'python_generate_and_run_code_tool(instruction="Calculate the date one year ago from December 30, 2014, and format it as MM/DD/YYYY.")': {'output_1': '12/30/2013\n', 'output_2': 'import datetime\n\n# Define the date\ncurrent_date = datetime.datetime(2014, 12, 30)\n\n# Calculate the date one year ago\none_year_ago = current_date - datetime.timedelta(days=365)\n\n# Format the date as MM/DD/YYYY\nformatted_date = one_year_ago.strftime("%m/%d/%Y")\n\n# Print the formatted date\nprint(formatted_date)'}}
+Instruction: Calculate the date one year ago from today and format it as MM/DD/YYYY.
+Output: 12/30/2013
+
+Python Code: import datetime
+
+# Define the current date
+current_date = datetime.datetime(2014, 12, 30)
+
+# Calculate the date one year ago
+one_year_ago = current_date - datetime.timedelta(days=365)
+
+# Format the date as MM/DD/YYYY
+formatted_date = one_year_ago.strftime("%m/%d/%Y")
+
+# Print the formatted date
+print(formatted_date)
+
+
+New Experiment:
+Instruction: Context: May 6, 1992 is like yesterday to Jane, but that is actually ten years ago. What is the date one year ago from today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date one year ago from today and format it in MM/DD/YYYY.
+Output: 09/10/2023
+
+Python Code: import datetime
+
+today = datetime.date.today()
+one_year_ago = today - datetime.timedelta(days=365)
+print(one_year_ago.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Jane scheduled 3 apointments with 5 poeple for tomorrow (Tue, 7/9/1972). What is the date today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date one day before 7/9/1972 and format it in MM/DD/YYYY.
+Output: 07/08/1972
+
+Python Code: import datetime
+
+target_date = datetime.datetime(1972, 7, 9)
+previous_day = target_date - datetime.timedelta(days=1)
+print(previous_day.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Jane was born on the last day of Feburary in 2000. Today is her 16-year-old birthday. What is the date one week from today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Determine the last day of February in the year 2000 and calculate the date 16 years later.
+Output: 03/07/2016
+
+Python Code: import datetime
+
+# Jane's birthdate
+birthdate = datetime.datetime(2000, 2, 29)
+
+# Jane's 16th birthday
+sixteenth_birthday = birthdate.replace(year=birthdate.year + 16)
+
+# Date one week from Jane's 16th birthday
+one_week_later = sixteenth_birthday + datetime.timedelta(weeks=1)
+
+# Print the date in MM/DD/YYYY format
+print(one_week_later.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Jane and John married on Jan 2, 1958. It is their 5-year anniversary today. What is the date today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date that is 5 years after Jan 2, 1958.
+Output: 01/01/1963
+
+Python Code: import datetime
+
+# Define the marriage date
+marriage_date = datetime.datetime(1958, 1, 2)
+
+# Calculate the 5-year anniversary date
+anniversary_date = marriage_date + datetime.timedelta(days=5*365)
+
+# Print the date in MM/DD/YYYY format
+print(anniversary_date.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Jane and John married on Jan 2, 1958. It is their 5-year anniversary today. What is the date today in MM/DD/YYYY?
+Previous Subtasks: {'python_generate_and_run_code_tool(instruction="Calculate the date that is 5 years after Jan 2, 1958.")': {'output_1': '01/01/1963\n', 'output_2': 'import datetime\n\n# Define the marriage date\nmarriage_date = datetime.datetime(1958, 1, 2)\n\n# Calculate the 5-year anniversary date\nanniversary_date = marriage_date + datetime.timedelta(days=5*365)\n\n# Print the date in MM/DD/YYYY format\nprint(anniversary_date.strftime("%m/%d/%Y"))'}}
+Instruction: Recalculate the date that is exactly 5 years after Jan 2, 1958, considering leap years.
+Output: 01/02/1963
+
+Python Code: import datetime
+
+# Define the marriage date
+marriage_date = datetime.datetime(1958, 1, 2)
+
+# Calculate the 5-year anniversary date considering leap years
+anniversary_date = marriage_date + datetime.timedelta(days=5*365 + 1)
+
+# Print the date in MM/DD/YYYY format
+print(anniversary_date.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Jane was born on the last day of Feburary in 2001. Today is her 16-year-old birthday. What is the date tomorrow in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate today's date by adding 16 years to Jane's birth date, which is the last day of February 2001.
+Output: 03/01/2017
+
+Python Code: import datetime
+from dateutil.relativedelta import relativedelta
+
+# Jane's birth date
+birth_date = datetime.date(2001, 2, 28)
+
+# Calculate today's date by adding 16 years
+today_date = birth_date + relativedelta(years=16)
+
+# Calculate tomorrow's date
+tomorrow_date = today_date + datetime.timedelta(days=1)
+
+# Print tomorrow's date in MM/DD/YYYY format
+print(tomorrow_date.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Jane was born on the last day of Feburary in 2001. Today is her 16-year-old birthday. What is the date tomorrow in MM/DD/YYYY?
+Previous Subtasks: {'python_generate_and_run_code_tool(instruction="Calculate today\'s date by adding 16 years to Jane\'s birth date, which is the last day of February 2001.")': {'output_1': '03/01/2017\n', 'output_2': 'import datetime\nfrom dateutil.relativedelta import relativedelta\n\n# Jane\'s birth date\nbirth_date = datetime.date(2001, 2, 28)\n\n# Calculate today\'s date by adding 16 years\ntoday_date = birth_date + relativedelta(years=16)\n\n# Calculate tomorrow\'s date\ntomorrow_date = today_date + datetime.timedelta(days=1)\n\n# Print tomorrow\'s date in MM/DD/YYYY format\nprint(tomorrow_date.strftime("%m/%d/%Y"))'}}
+Instruction: Calculate tomorrow's date by adding one day to 03/01/2017 and print it in MM/DD/YYYY format.
+Output: 03/02/2017
+
+Python Code: import datetime
+
+# Today's date
+today_date = datetime.date(2017, 3, 1)
+
+# Calculate tomorrow's date
+# Add one day to today's date
+
+# Print tomorrow's date in MM/DD/YYYY format
+print((today_date + datetime.timedelta(days=1)).strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Jane was born on the last day of Feburary in 2000. Today is her 16-year-old birthday. What is the date a month ago in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date a month before February 29, 2016.
+Output: 01/29/2016
+
+Python Code: import datetime
+from dateutil.relativedelta import relativedelta
+
+# Jane's 16th birthday
+birthday = datetime.datetime(2016, 2, 29)
+
+# Calculate the date a month before
+one_month_before = birthday - relativedelta(months=1)
+
+# Print the date in MM/DD/YYYY format
+print(one_month_before.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Today, 8/3/1997, is a day that we will never forget. What is the date 24 hours later in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Add one day to the date 8/3/1997 and format the result in MM/DD/YYYY.
+Output: 08/04/1997
+
+Python Code: import datetime
+
+date_str = "8/3/1997"
+date_obj = datetime.datetime.strptime(date_str, "%m/%d/%Y")
+next_day = date_obj + datetime.timedelta(days=1)
+print(next_day.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Today is the palindrome day of 2020, because the MMDDYYYY format of the date is the same backwards as forwards. What is the date yesterday in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Identify the palindrome date in MM/DD/YYYY format in 2020.
+Output: 02/01/2020
+
+Python Code: import datetime
+
+# Palindrome date in 2020 is 02/02/2020
+palindrome_date = datetime.datetime.strptime("02/02/2020", "%m/%d/%Y")
+yesterday = palindrome_date - datetime.timedelta(days=1)
+print(yesterday.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Today is the palindrome day of 2020, because the MMDDYYYY format of the date is the same backwards as forwards. What is the date yesterday in MM/DD/YYYY?
+Previous Subtasks: {'python_generate_and_run_code_tool(instruction="Identify the palindrome date in MM/DD/YYYY format in 2020.")': {'output_1': '02/01/2020\n', 'output_2': 'import datetime\n\n# Palindrome date in 2020 is 02/02/2020\npalindrome_date = datetime.datetime.strptime("02/02/2020", "%m/%d/%Y")\nyesterday = palindrome_date - datetime.timedelta(days=1)\nprint(yesterday.strftime("%m/%d/%Y"))'}}
+Instruction: Subtract one day from 02/02/2020 and format the result in MM/DD/YYYY.
+Output: 02/01/2020
+
+Python Code: import datetime
+
+# Palindrome date in 2020 is 02/02/2020
+palindrome_date = datetime.datetime.strptime("02/02/2020", "%m/%d/%Y")
+yesterday = palindrome_date - datetime.timedelta(days=1)
+print(yesterday.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: On May 9th, 2017 Jane bought 40 eggs. She ate one per day. Today she ran out of eggs. What is the date today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date 40 days after May 9th, 2017.
+Output: 06/18/2017
+
+Python Code: import datetime
+
+start_date = datetime.datetime(2017, 5, 9)
+days_to_add = 40
+end_date = start_date + datetime.timedelta(days=days_to_add)
+print(end_date.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Yesterday was 12/31/1929. Today could not be 12/32/1929 because December has only 31 days. What is the date tomorrow in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date one day after 01/01/1930 and present it in MM/DD/YYYY format.
+Output: 01/02/1930
+
+Python Code: import datetime
+
+today = datetime.datetime(1930, 1, 1)
+tomorrow = today + datetime.timedelta(days=1)
+print(tomorrow.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Yesterday was 12/31/1929. Today could not be 12/32/1929 because December has only 31 days. What is the date tomorrow in MM/DD/YYYY?
+Previous Subtasks: {'python_generate_and_run_code_tool(instruction="Calculate the date one day after 01/01/1930 and present it in MM/DD/YYYY format.")': {'output_1': '01/02/1930\n', 'output_2': 'import datetime\n\ntoday = datetime.datetime(1930, 1, 1)\ntomorrow = today + datetime.timedelta(days=1)\nprint(tomorrow.strftime("%m/%d/%Y"))'}}
+Instruction: Calculate the date one day after 12/31/1929 and present it in MM/DD/YYYY format.
+Output: 01/01/1930
+
+Python Code: import datetime
+
+today = datetime.datetime(1929, 12, 31)
+tomorrow = today + datetime.timedelta(days=1)
+print(tomorrow.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Yesterday was 12/31/1929. Today could not be 12/32/1929 because December has only 31 days. What is the date 24 hours later in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date 24 hours after 12/31/1929 using date arithmetic.
+Output: 01/01/1930
+
+Python Code: import datetime
+
+yesterday = datetime.datetime(1929, 12, 31)
+today = yesterday + datetime.timedelta(days=1)
+print(today.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: It was Sept. 1st, 2021 a week ago. What is the date one week from today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate today's date by adding one week to September 1st, 2021.
+Output: 09/08/2021
+
+Python Code: import datetime
+
+# Define the initial date
+initial_date = datetime.datetime(2021, 9, 1)
+
+# Calculate the date one week from the initial date
+one_week_later = initial_date + datetime.timedelta(weeks=1)
+
+# Format the date in MM/DD/YYYY
+formatted_date = one_week_later.strftime("%m/%d/%Y")
+
+# Print the formatted date
+print(formatted_date)
+
+
+New Experiment:
+Instruction: Context: It was Sept. 1st, 2021 a week ago. What is the date one week from today in MM/DD/YYYY?
+Previous Subtasks: {'python_generate_and_run_code_tool(instruction="Calculate today\'s date by adding one week to September 1st, 2021.")': {'output_1': '09/08/2021\n', 'output_2': 'import datetime\n\n# Define the initial date\ninitial_date = datetime.datetime(2021, 9, 1)\n\n# Calculate the date one week from the initial date\none_week_later = initial_date + datetime.timedelta(weeks=1)\n\n# Format the date in MM/DD/YYYY\nformatted_date = one_week_later.strftime("%m/%d/%Y")\n\n# Print the formatted date\nprint(formatted_date)'}}
+Instruction: Calculate today's date and then determine the date one week from today, formatting it in MM/DD/YYYY.
+Output: 09/16/2024
+
+Python Code: import datetime
+
+# Calculate today's date
+today = datetime.datetime.now()
+
+# Calculate the date one week from today
+one_week_from_today = today + datetime.timedelta(weeks=1)
+
+# Format the date in MM/DD/YYYY
+formatted_date = one_week_from_today.strftime("%m/%d/%Y")
+
+# Print the formatted date
+print(formatted_date)
+
+
+New Experiment:
+Instruction: Context: Jane and John married on Jan 2, 1958. Today is their golden wedding anniversary. What is the date one week ago from today in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Calculate the date one week ago from Jan 2, 2008.
+Output: 12/26/2007
+
+Python Code: import datetime
+
+date = datetime.datetime(2008, 1, 2)
+one_week_ago = date - datetime.timedelta(days=7)
+print(one_week_ago.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Jane thinks today is 6/18/2019, but John thinks today is 6/19/2019. Jane is correct. What is the date tomorrow in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Add one day to 6/18/2019 to find the date for tomorrow.
+Output: 06/19/2019
+
+Python Code: import datetime
+
+date_today = datetime.datetime.strptime("06/18/2019", "%m/%d/%Y")
+date_tomorrow = date_today + datetime.timedelta(days=1)
+print(date_tomorrow.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Today, 8/3/1997, is a day that we will never forget. What is the date 10 days ago in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Subtract 10 days from 8/3/1997 and format the result in MM/DD/YYYY.
+Output: 07/24/1997
+
+Python Code: import datetime
+
+# Define the initial date
+initial_date = datetime.datetime(1997, 8, 3)
+
+# Subtract 10 days
+new_date = initial_date - datetime.timedelta(days=10)
+
+# Print the new date in MM/DD/YYYY format
+print(new_date.strftime("%m/%d/%Y"))
+
+
+New Experiment:
+Instruction: Context: Today is Sep 9, 1909. What is the date tomorrow in MM/DD/YYYY?
+Previous Subtasks: {}
+Instruction: Add one day to September 9, 1909, and format the result in MM/DD/YYYY.
+Output: 09/10/1909
+
+Python Code: import datetime
+
+today = datetime.datetime(1909, 9, 9)
+tomorrow = today + datetime.timedelta(days=1)
+print(tomorrow.strftime("%m/%d/%Y"))
+
+

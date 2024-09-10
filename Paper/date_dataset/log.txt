@@ -1,0 +1,51 @@
+ID: 210: Prediction: 12/31/1937 - True Answer: #### 12/31/1937 - Correct: True
+ID: 92: Prediction: 08/13/2020 - True Answer: #### 08/12/2020 - Correct: False
+ID: 321: Prediction: 09/09/2023 - True Answer: #### 09/08/2020 - Correct: False
+ID: 217: Prediction: 02/02/2019 - True Answer: #### 02/02/2019 - Correct: True
+ID: 48: Prediction: 03/19/1969 - True Answer: #### 03/19/1969 - Correct: True
+ID: 144: Prediction: 12/01/2006 - True Answer: #### 12/01/2006 - Correct: True
+ID: 283: Prediction: 11/24/1933 - True Answer: #### 11/24/1933 - Correct: True
+ID: 172: Prediction: 09/09/2023 - True Answer: #### 01/22/2010 - Correct: False
+ID: 350: Prediction: 04/01/2008 - True Answer: #### 04/01/2008 - Correct: True
+ID: 106: Prediction: 01/03/1987 - True Answer: #### 01/03/1987 - Correct: True
+ID: 311: Prediction: 01/21/2012 - True Answer: #### 01/21/2012 - Correct: True
+ID: 262: Prediction: 02/23/1966 - True Answer: #### 02/23/1966 - Correct: True
+ID: 173: Prediction: 09/01/2024 - True Answer: #### 01/15/2011 - Correct: False
+ID: 156: Prediction: 04/17/1985 - True Answer: #### 04/17/1985 - Correct: True
+ID: 355: Prediction: The first Monday of 2019 is: 01/01/2019 - True Answer: #### 12/07/2018 - Correct: False
+ID: 61: Prediction: The last day of February in 2000 is 29. - True Answer: #### 03/01/2016 - Correct: False
+ID: 100: Prediction: Date and time 36 hours before January 1, 2015, 00:00:00 is: 2014-12-30 12:00:00 - True Answer: #### 12/20/2014 - Correct: False
+ID: 88: Prediction: 09/12/2020 - True Answer: #### 09/12/2020 - Correct: True
+ID: 145: Prediction: 01/01/2006 - True Answer: #### 01/01/2006 - Correct: True
+ID: 71: Prediction: 01/03/2008 - True Answer: #### 01/03/2008 - Correct: True
+ID: 4: Prediction: 05/01/2020 - True Answer: #### 05/01/2020 - Correct: True
+ID: 234: Prediction: 06/02/1942 - True Answer: #### 06/02/1942 - Correct: True
+ID: 11: Prediction: 05/20/2021 - True Answer: #### 05/20/2021 - Correct: True
+ID: 101: Prediction: The exact date and time 36 hours before the start of 2015 is: 2014-12-30 12:00:00 - True Answer: #### 11/30/2014 - Correct: False
+ID: 249: Prediction: 05/03/2004 - True Answer: #### 05/03/2004 - Correct: True
+ID: 299: Prediction: 10/15/1924 - True Answer: #### 10/15/1924 - Correct: True
+ID: 206: Prediction: 12/14/1937 - True Answer: #### 12/14/1937 - Correct: True
+ID: 182: Prediction: 06/11/2019 - True Answer: #### 06/11/2019 - Correct: True
+ID: 253: Prediction: 04/27/2004 - True Answer: #### 04/27/2004 - Correct: True
+ID: 102: Prediction: 12/30/2013 - True Answer: #### 12/30/2013 - Correct: True
+ID: 199: Prediction: 09/09/2023 - True Answer: #### 05/06/2001 - Correct: False
+ID: 238: Prediction: 07/08/1972 - True Answer: #### 07/08/1972 - Correct: True
+ID: 60: Prediction: Jane's 16th birthday: 02/29/2016Date one week from Jane's 16th birthday: 03/07/2016 - True Answer: #### 03/07/2016 - Correct: False
+ID: 325: Prediction: 01/02/1963 - True Answer: #### 01/02/1963 - Correct: True
+ID: 63: Prediction: 03/01/2017 - True Answer: #### 03/01/2017 - Correct: True
+ID: 57: Prediction: 02/29/2016 - True Answer: #### 01/29/2016 - Correct: False
+ID: 34: Prediction: 08/04/1997 - True Answer: #### 08/04/1997 - Correct: True
+ID: 214: Prediction:  - True Answer: #### 02/01/2020 - Correct: True
+ID: 333: Prediction: 06/18/2017 - True Answer: #### 06/18/2017 - Correct: True
+ID: 274: Prediction: Yesterday: 12/31/1929Today: 01/01/1930Tomorrow: 01/02/1930 - True Answer: #### 01/02/1930 - Correct: False
+ID: 281: Prediction: 01/01/1930 - True Answer: #### 01/02/1930 - Correct: False
+ID: 323: Prediction: 09/08/2021 - True Answer: #### 09/15/2021 - Correct: False
+ID: 76: Prediction: 12/26/2007 - True Answer: #### 12/26/2007 - Correct: True
+ID: 177: Prediction: 06/19/2019 - True Answer: #### 06/19/2019 - Correct: True
+ID: 29: Prediction: 07/24/1997 - True Answer: #### 07/24/1997 - Correct: True
+ID: 36: Prediction: 09/10/1909 - True Answer: #### 09/10/1909 - Correct: True
+ID: 289: Prediction: 11/25/1933 - True Answer: #### 12/02/1933 - Correct: False
+ID: 297: Prediction: 11/29/2001 - True Answer: #### 11/29/2001 - Correct: True
+ID: 280: Prediction: 01/08/1930 - True Answer: #### 01/08/1930 - Correct: True
+ID: 259: Prediction: 02/20/1966 - True Answer: #### 02/20/1966 - Correct: True
+ID: 312: Prediction: 12/31/2011 - True Answer: #### 12/31/2011 - Correct: True
